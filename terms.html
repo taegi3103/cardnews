@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>cardnews</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #f3ead9;
+    color: #1c140f;
+    font-family: -apple-system, "Apple SD Gothic Neo", "Segoe UI", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 56px 24px 96px;
+  }
+  main { width: 100%; max-width: 680px; }
+  .kicker {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    color: #ff5a1f;
+    display: block;
+    margin-bottom: 10px;
+  }
+  h1 { margin: 0 0 8px; font-size: 28px; font-weight: 800; }
+  .updated { font-size: 13px; color: #8a7862; margin-bottom: 32px; }
+  h2 { font-size: 18px; margin: 32px 0 10px; font-weight: 700; }
+  p, li { font-size: 15px; line-height: 1.75; color: #4a3f34; }
+  ul { padding-left: 20px; margin: 8px 0; }
+  li { margin-bottom: 6px; }
+  a { color: #ff5a1f; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid #e6d9c4; font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <span class="kicker">cardnews</span>
+  <h1>이용약관</h1>
+  <p class="updated">최종 업데이트: 2026년 9월 1일</p>
+
+  <h2>1. 서비스 개요</h2>
+  <p>
+    cardnews("본 서비스")는 최신 뉴스를 수집·요약하여 카드뉴스 이미지 및 짧은 영상으로 자동 제작한 뒤,
+    운영자 본인 소유의 TikTok 계정에 게시하기 위해 사용되는 개인용 자동화 도구입니다. 본 서비스는
+    운영자 1인이 자신의 콘텐츠 제작·게시 업무를 자동화할 목적으로 개발·운영하며, 일반 대중을 대상으로
+    한 계정 가입형 서비스가 아닙니다.
+  </p>
+
+  <h2>2. TikTok 계정 연동</h2>
+  <p>
+    본 서비스는 TikTok의 Login Kit 및 Content Posting API를 통해 운영자 본인의 TikTok 계정에만
+    연동됩니다. 연동 시 요청하는 권한은 다음과 같습니다.
+  </p>
+  <ul>
+    <li><code>user.info.basic</code> — 연동된 계정을 식별하기 위한 기본 프로필 조회</li>
+    <li><code>video.upload</code> — 자동 제작된 영상을 운영자 본인 계정에 업로드</li>
+  </ul>
+  <p>
+    업로드된 콘텐츠는 TikTok 앱 내에서 초안(draft) 형태로 저장되며, 최종 게시 여부와 시점은 운영자가
+    직접 결정합니다.
+  </p>
+
+  <h2>3. 콘텐츠 책임</h2>
+  <p>
+    본 서비스를 통해 제작·게시되는 모든 콘텐츠에 대한 책임은 운영자에게 있으며, TikTok의 커뮤니티
+    가이드라인 및 관련 정책을 준수합니다.
+  </p>
+
+  <h2>4. 서비스 변경 및 중단</h2>
+  <p>
+    운영자는 사전 고지 없이 본 서비스의 기능을 변경하거나 중단할 수 있습니다. TikTok 계정 연동은
+    TikTok 계정 설정에서 언제든지 해제할 수 있습니다.
+  </p>
+
+  <h2>5. 면책 조항</h2>
+  <p>
+    본 서비스는 "있는 그대로" 제공되며, 자동 제작된 콘텐츠의 정확성이나 특정 목적에의 적합성에 대해
+    보증하지 않습니다.
+  </p>
+
+  <h2>6. 문의</h2>
+  <p>
+    본 약관에 대한 문의사항은 GitHub 저장소 이슈 등록을 통해 문의해 주시기 바랍니다:
+    <a href="https://github.com/taegi3103/cardnews/issues">github.com/taegi3103/cardnews/issues</a>
+  </p>
+
+  <footer>
+    <a href="./index.html">← 홈으로</a>
+  </footer>
+</main>
+</body>
+</html>

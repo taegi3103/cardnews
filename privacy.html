@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>cardnews</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #f3ead9;
+    color: #1c140f;
+    font-family: -apple-system, "Apple SD Gothic Neo", "Segoe UI", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 56px 24px 96px;
+  }
+  main { width: 100%; max-width: 680px; }
+  .kicker {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    color: #ff5a1f;
+    display: block;
+    margin-bottom: 10px;
+  }
+  h1 { margin: 0 0 8px; font-size: 28px; font-weight: 800; }
+  .updated { font-size: 13px; color: #8a7862; margin-bottom: 32px; }
+  h2 { font-size: 18px; margin: 32px 0 10px; font-weight: 700; }
+  p, li { font-size: 15px; line-height: 1.75; color: #4a3f34; }
+  ul { padding-left: 20px; margin: 8px 0; }
+  li { margin-bottom: 6px; }
+  a { color: #ff5a1f; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid #e6d9c4; font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <span class="kicker">cardnews</span>
+  <h1>개인정보처리방침</h1>
+  <p class="updated">최종 업데이트: 2026년 9월 1일</p>
+
+  <p>
+    cardnews("본 서비스")는 운영자 1인이 본인 소유의 TikTok 계정에 뉴스 기반 카드뉴스·짧은 영상을
+    게시하기 위해 사용하는 개인용 자동화 도구입니다. 본 서비스는 불특정 다수의 사용자를 대상으로 한
+    공개 서비스가 아니며, 오직 운영자 본인의 TikTok 계정 연동을 위해서만 사용됩니다.
+  </p>
+
+  <h2>1. 수집하는 정보</h2>
+  <p>TikTok 계정 연동(OAuth 로그인) 시 아래 정보만 수집합니다.</p>
+  <ul>
+    <li>TikTok 사용자 식별자(Open ID)</li>
+    <li>프로필 이미지(avatar)</li>
+    <li>표시 이름(display name)</li>
+  </ul>
+  <p>
+    이 정보는 <code>user.info.basic</code> 권한을 통해 조회되며, 게시가 올바른 계정으로 이루어지는지
+    확인하는 용도로만 사용됩니다. 그 외의 개인정보(비밀번호, 연락처, 결제 정보 등)는 수집하지 않습니다.
+  </p>
+
+  <h2>2. 정보 이용 목적</h2>
+  <ul>
+    <li>운영자 본인 계정 인증 및 식별</li>
+    <li>자동 제작된 카드뉴스 영상을 <code>video.upload</code> 권한으로 운영자 본인의 TikTok 계정에 업로드</li>
+  </ul>
+  <p>수집된 정보는 위 목적 외 다른 용도로 사용되지 않습니다.</p>
+
+  <h2>3. 제3자 제공 여부</h2>
+  <p>
+    본 서비스는 수집한 정보를 TikTok 외 어떠한 제3자에게도 제공, 판매, 공유하지 않습니다.
+    콘텐츠 게시를 위해 TikTok의 Content Posting API를 이용하는 것 외에 외부 서비스와 연동하지 않습니다.
+  </p>
+
+  <h2>4. 정보 보관 및 삭제</h2>
+  <ul>
+    <li>OAuth 접근 토큰(access token) 및 갱신 토큰(refresh token)은 자동화 파이프라인 운영을 위해
+      암호화된 형태로 안전하게 보관됩니다.</li>
+    <li>운영자는 언제든지 TikTok 계정 설정에서 앱 연동을 해제할 수 있으며, 연동 해제 시 관련 토큰은
+      즉시 폐기됩니다.</li>
+    <li>연동 해제 또는 서비스 중단 요청 시 보유 중인 관련 정보를 지체 없이 삭제합니다.</li>
+  </ul>
+
+  <h2>5. 문의</h2>
+  <p>
+    본 방침에 대한 문의사항은 이용약관 하단의 연락처로 문의해 주시기 바랍니다.
+  </p>
+
+  <footer>
+    <a href="./index.html">← 홈으로</a>
+  </footer>
+</main>
+</body>
+</html>
